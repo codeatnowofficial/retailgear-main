@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'customers',
     loadChildren: () =>
       loadRemoteModule({
-        remoteEntry: `http://localhost:4201/customers.js`,
+        remoteEntry: `https://retailgear-expo.vercel.app/customers.js`,
         remoteName: 'customers',
         exposedModule: './CustomersModule',
       }).then((module) => module.CustomersModule),
